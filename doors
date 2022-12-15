@@ -59,7 +59,7 @@ game.StarterGui:SetCore("SendNotification", {
 
    Duration = "7";
 
-}
+})
 wait(2)
 game.StarterGui:SetCore("SendNotification", {
 
@@ -69,14 +69,14 @@ game.StarterGui:SetCore("SendNotification", {
 
    Duration = "7";
 
-}
+})
 wait(2)
 game.StarterGui:SetCore("SendNotification", {
 
    Title = "Version";
 
-   Text = "V"..version, versionname;
+   Text = "v"..version.." "..versionname;
 
    Duration = "7";
 
-}
+})
