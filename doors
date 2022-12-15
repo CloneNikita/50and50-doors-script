@@ -1,3 +1,5 @@
+version = "0.0.1"
+versionname = "alpha"
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
 getgenv().autoplay= false;
@@ -35,6 +37,7 @@ end)
 
 
 
+
 o:DestroyGui()
 
 function autoplay()
@@ -46,4 +49,34 @@ function autoplay()
 end
 game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-1583, 11, 23))
 
+
 end
+game.StarterGui:SetCore("SendNotification" {
+
+   Title = "Credits"
+
+   Text = "Scripter: Clone_Nikita1. UI: idk"
+
+   Duration = "7"
+
+}
+wait(2)
+game.StarterGui:SetCore("SendNotification" {
+
+   Title = "Thanks for using!"
+
+   Text = "Subscribe to Clone_Nikita1 (RS Dev)"
+
+   Duration = "7"
+
+}
+wait(2)
+game.StarterGui:SetCore("SendNotification" {
+
+   Title = "Version"
+
+   Text = ""..version, versionname
+
+   Duration = "7"
+
+}
