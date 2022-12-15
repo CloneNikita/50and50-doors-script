@@ -53,30 +53,30 @@ game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-1583, 11, 23))
 end
 game.StarterGui:SetCore("SendNotification", {
 
-   Title = "Credits"
+   Title = "Credits";
 
-   Text = "Scripter: Clone_Nikita1. UI: idk"
+   Text = "Scripter: Clone_Nikita1. UI: idk";
 
-   Duration = "7"
-
-}
-wait(2)
-game.StarterGui:SetCore("SendNotification", {
-
-   Title = "Thanks for using!"
-
-   Text = "Subscribe to Clone_Nikita1 (RS Dev)"
-
-   Duration = "7"
+   Duration = "7";
 
 }
 wait(2)
 game.StarterGui:SetCore("SendNotification", {
 
-   Title = "Version"
+   Title = "Thanks for using!";
 
-   Text = "V"..version, versionname
+   Text = "Subscribe to Clone_Nikita1 (RS Dev)";
 
-   Duration = "7"
+   Duration = "7";
+
+}
+wait(2)
+game.StarterGui:SetCore("SendNotification", {
+
+   Title = "Version";
+
+   Text = "V"..version, versionname;
+
+   Duration = "7";
 
 }
