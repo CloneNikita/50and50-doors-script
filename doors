@@ -51,7 +51,7 @@ game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-1583, 11, 23))
 
 
 end
-game.StarterGui:SetCore("SendNotification" {
+game.StarterGui:SetCore("SendNotification", {
 
    Title = "Credits"
 
@@ -61,7 +61,7 @@ game.StarterGui:SetCore("SendNotification" {
 
 }
 wait(2)
-game.StarterGui:SetCore("SendNotification" {
+game.StarterGui:SetCore("SendNotification", {
 
    Title = "Thanks for using!"
 
@@ -71,11 +71,11 @@ game.StarterGui:SetCore("SendNotification" {
 
 }
 wait(2)
-game.StarterGui:SetCore("SendNotification" {
+game.StarterGui:SetCore("SendNotification", {
 
    Title = "Version"
 
-   Text = ""..version, versionname
+   Text = "V"..version, versionname
 
    Duration = "7"
 
