@@ -7,7 +7,7 @@ local w = library:CreateWindow("50/50 Door v 0.0.1.5 (Alpha)") -- Creates the wi
 local b = w:CreateFolder("Main")
 local o = w:CreateFolder("Other")
 
-b:Button("Auto Play (Needed to be )",function()
+b:Button("Auto Play (Some Buggy)",function()
 autoplay();
 end)
 
@@ -19,7 +19,7 @@ b:Button("Speed: 100",function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 end)
 
-o:Button("VHub",function()
+o:Button("VHub (Not mine)",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
 end)
 
