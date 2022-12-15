@@ -2,12 +2,12 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloo
 
 getgenv().autoplay= false;
 
-local w = library:CreateWindow("50/50 Door v 0.0.1") -- Creates the window
+local w = library:CreateWindow("50/50 Door v 0.0.1.5 (Alpha)") -- Creates the window
 
 local b = w:CreateFolder("Main")
 local o = w:CreateFolder("Other")
 
-b:Button("Auto Play",function()
+b:Button("Auto Play (Needed to be )",function()
 autoplay();
 end)
 
