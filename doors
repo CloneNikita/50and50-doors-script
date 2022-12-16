@@ -2,8 +2,6 @@ version = "0.0.1"
 versionname = "alpha"
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
-getgenv().autoplay= false;
-
 local w = library:CreateWindow("50/50 Door (Alpha)") -- Creates the window
 
 local b = w:CreateFolder("Main")
@@ -11,6 +9,15 @@ local o = w:CreateFolder("Other")
 
 b:Button("Auto Play (Some Buggy)",function()
 autoplay();
+end)
+
+b:Button("Show Correct Doors",function()
+for k, v in pairs(game:GetService("Workspace").Doors:GetDescendants()) do
+    if v.Name == "???" then
+        v.Parent.BrickColor = BrickColor.new("Pink")
+        v.Parent.Material = "Neon"
+    end
+end
 end)
 
 b:Button("Speed: 50",function()
@@ -25,16 +32,11 @@ o:Button("VHub (Not mine)",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
 end)
 
-b:Button("Show Correct Doors",function()
-for k, v in pairs(game:GetService("Workspace").Doors:GetDescendants()) do
-    if v.Name == "???" then
-        v.Parent.BrickColor = BrickColor.new("Pink")
-        v.Parent.Material = "Neon"
-    end
-end
+
+
+b:Button("To Finish",function()
+   game.Players.LocalPlayer.Character.Torso.Position = Vector3.new(-1583, 11, 23)
 end)
-
-
 
 
 
