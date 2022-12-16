@@ -34,8 +34,8 @@ end)
 
 
 
-b:Button("To Finish",function()
-   game.Players.LocalPlayer.Character.Torso.Position = Vector3.new(-1583, 11, 23)
+o:Button("Rejoin",function()
+game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 end)
 
 
